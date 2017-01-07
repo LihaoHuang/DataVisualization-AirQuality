@@ -1,6 +1,6 @@
 			<footer style="background-color: #2A3F54">
 				<div class="pull-right">
-				虎尾科技大學 資訊工程系 <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span><a href="https://colorlib.com">黃立豪、葉晴尹 </a>
+				虎尾科技大學 資訊工程系 <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span><a href="{{ url('/developer') }}">黃立豪、葉晴尹 </a>
 				</div>
 				<div class="clearfix"></div>
 			</footer>

@@ -68,24 +68,18 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">登入</a>
-                        <a href="{{ url('/register') }}">註冊</a>
-                    @endif
+                    <a href="{{ url('/') }}">Back</a>
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    {{ config('app.name','Laravel') }}
+					<a href="http://maselab318.ddns.net/csie40343232/"><img src="{{ asset('images/lihao.png') }}" alt="黃立豪" class="img-circle"></a>
+					<a href="http://maselab318.ddns.net/csie40343204/"><img src="{{ asset('images/chingying.png') }}" alt="葉晴尹" class="img-circle"></a>
                 </div>
 
                 <div class="links">
-                    <a href="{{ url('/home') }}">Home</a>
-                    <a href="https://github.com/LihaoHuang/StudentAssociation">GitHub</a>
-                    <a href="{{ url('/developer') }}">Developer</a>
+                    <a href="{{ url('/') }}">Back</a>
                 </div>
             </div>
         </div>
