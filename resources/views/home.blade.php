@@ -1,16 +1,15 @@
-@extends('layouts.app')
+@extends('layouts.master')
+
+@section('title', '首頁')
 
 @section('content')
+<script type="text/javascript">
+	localStorage.setItem("Country", "臺北市");
+</script>
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
+        <div align="center" style="height: 60vh;margin-top: 20%;">
+            <font size="50px">{{ config('app.name') }}</font>
         </div>
     </div>
 </div>
