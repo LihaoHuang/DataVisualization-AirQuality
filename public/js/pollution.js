@@ -2,7 +2,7 @@
 * @Author: LihaoHuang
 * @Date:   2017-01-07 18:41:21
 * @Last Modified by:   LihaoHuang
-* @Last Modified time: 2017-01-07 23:13:59
+* @Last Modified time: 2017-01-07 23:50:17
 */
 'use strict';
 
@@ -35,7 +35,6 @@ window.onload=function() {
 	var PM25 = "";
 	var PM10 = "";
 	for (var i = 0; i < Data.length; i++) {
-		console.log(Data[i].childNodes[3].innerHTML);
 		if (Data[i].childNodes[3].innerHTML == localStorage.getItem("Country")) {
 			//CO的資料呈現
 			PM25 += "<div>"
