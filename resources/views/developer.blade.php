@@ -77,7 +77,6 @@
 					<a href="http://maselab318.ddns.net/csie40343232/"><img src="{{ asset('images/lihao.png') }}" alt="黃立豪" class="img-circle"></a>
 					<a href="http://maselab318.ddns.net/csie40343204/"><img src="{{ asset('images/chingying.png') }}" alt="葉晴尹" class="img-circle"></a>
                 </div>
-
                 <div class="links">
                     <a href="{{ url('/') }}">Back</a>
                 </div>

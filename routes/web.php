@@ -14,10 +14,28 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
 Route::get('/developer', function () {
     return view('developer');
 });
-Auth::routes();
+
+Route::get('/pollution', function () {
+    return view('DataVisualization.pollution');
+});
+
+Route::get('/reduction', function () {
+    return view('DataVisualization.reduction');
+});
+
+Route::get('/particles', function () {
+    return view('DynamicNews.particles');
+});
+
+Route::get('/gas', function () {
+    return view('DynamicNews.gas');
+});
 
 Route::get('/home', 'HomeController@index');
 
