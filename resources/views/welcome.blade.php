@@ -84,7 +84,7 @@
 
                 <div class="links">
                     <a href="{{ url('/home') }}">Home</a>
-                    <a href="https://github.com/LihaoHuang/StudentAssociation">GitHub</a>
+                    <a href="https://github.com/LihaoHuang/DataVisualization-AirQuality">GitHub</a>
                     <a href="{{ url('/developer') }}">Developer</a>
                 </div>
             </div>
