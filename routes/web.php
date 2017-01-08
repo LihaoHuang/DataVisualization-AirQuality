@@ -15,11 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/developer', function () {
+    return view('developer');
+});
+
 Auth::routes();
+
 Route::group(['middleware' => ['auth']], function () {
-	Route::get('/developer', function () {
-	    return view('developer');
-	});
+	
 
 	Route::get('/pollution', function () {
 	    return view('DataVisualization.pollution');
