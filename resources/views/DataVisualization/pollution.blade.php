@@ -3,7 +3,9 @@
 @section('title', '空氣品質汙染指標')
 
 @section('content')
-
+<div class="x_panel">
+	<font size="10px;">空氣品質汙染指標</font>
+</div>
 <div style="margin-top: 20px;" class="col-md-12 col-sm-12 col-xs-12">
 	<label for="country">選擇縣市</label>
 	<select id="country" class="form-control">
