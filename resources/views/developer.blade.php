@@ -65,10 +65,10 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height" style="background-image:url({{ asset('/images/img101.jpg') }})">
             @if (Route::has('login'))
                 <div class="top-right links">
-                    <a href="{{ url('/') }}">Back</a>
+                    <a href="{{ url('/') }}"><font color="black">Back</font></a>
                 </div>
             @endif
 
@@ -78,7 +78,7 @@
 					<a href="http://maselab318.ddns.net/csie40343204/"><img src="{{ asset('images/chingying.png') }}" alt="葉晴尹" class="img-circle"></a>
                 </div>
                 <div class="links">
-                    <a href="{{ url('/') }}">Back</a>
+                    <a href="{{ url('/') }}"><font color="black">Back</font></a>
                 </div>
             </div>
         </div>
