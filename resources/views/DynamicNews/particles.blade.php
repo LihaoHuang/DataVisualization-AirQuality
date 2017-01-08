@@ -3,11 +3,34 @@
 @section('title', '細懸浮微粒')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div align="center" style="height: 60vh;margin-top: 20%;">
-            <font size="50px">{{ config('app.name') }}</font>
-        </div>
-    </div>
+<div class="x_panel">
+	<font size="10px;">細懸浮微粒</font>
+	<img src="{{ asset('/images/einfo.jpg')}} ">
 </div>
+<div class="x_panel">
+	<!-- Table row -->
+	<div class="row">
+		<div class="col-xs-12 table">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th><font size="5px;">標題</font></th>
+						<th><font size="5px;">發佈時間</font></th>
+						<th><font size="5px;">作者</font></th>
+						<th><font size="5px;">文章出處</font></th>
+					</tr>
+				</thead>
+				<tbody id="rss_data">
+					<tr>
+						<td colspan="4"><center><font size="5px" color="red">無資料</font></center></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- /.col -->
+	</div>
+	<!-- /.row -->
+</div>
+<script src="{{ asset('/js/xml.js') }}"></script>
+<script src="{{ asset('/js/particles.js') }}"></script>
 @endsection
