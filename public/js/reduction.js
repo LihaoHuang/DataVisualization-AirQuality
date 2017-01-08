@@ -2,7 +2,7 @@
 * @Author: LihaoHuang
 * @Date:   2017-01-07 23:36:39
 * @Last Modified by:   LihaoHuang
-* @Last Modified time: 2017-01-08 18:02:03
+* @Last Modified time: 2017-01-08 18:21:10
 */
 
 'use strict';
@@ -40,26 +40,97 @@ window.onload=function() {
 	}
 	// console.log(NO2);
 
+	// Line chart
+	var line_ctx = document.getElementById("mylineChart");
+	var mylineChart = new Chart(line_ctx, {
+		type: 'line',
+		data: {
+			labels: Year,
+			datasets: [
+			{
+				label: '臭氧',
+				backgroundColor: "rgba(3, 88, 106, 0.2)",
+				borderColor: "rgba(3, 88, 106, 0.80)",
+				pointBorderColor: "rgba(3, 88, 106, 0.80)",
+				pointBackgroundColor: "rgba(3, 88, 106, 0.80)",
+				pointHoverBackgroundColor: "#fff",
+				pointHoverBorderColor: "rgba(220,220,220,1)",
+				data: O3
+			},
+			{
+				label: '二氧化氮',
+				backgroundColor: "rgba(38, 185, 154, 0.2)",
+				borderColor: "rgba(0, 102, 0, 0.85)",
+				pointColor: "rgba(0, 102, 0, 0.85)",
+				pointStrokeColor: "#fff",
+				pointHighlightFill: "#fff",
+				pointHighlightStroke: "rgba(151,187,205,1)",
+				data: NO2
+			},
+			{
+				label: '落塵量',
+				backgroundColor: "rgba(69, 92, 115, 0.2)",
+				borderColor: "rgba(0, 0, 204, 0.85)",
+				pointColor: "rgba(0, 0, 204, 0.85)",
+				pointStrokeColor: "#fff",
+				pointHighlightFill: "#fff",
+				pointHighlightStroke: "rgba(151,187,205,1)",
+				data: Dust
+			},
+			
+			{
+				label: '二氧化硫',
+				backgroundColor: "rgba(189, 195, 199, 0.2)",
+				borderColor: "rgba(204, 51, 0, 0.85)",
+				pointColor: "rgba(204, 51, 0, 0.85)",
+				pointStrokeColor: "#fff",
+				pointHighlightFill: "#fff",
+				pointHighlightStroke: "rgba(151,187,205,1)",
+				data: SO2
+			},
+			{
+				label: '一氧化氮',
+				backgroundColor: "rgba(38, 185, 154, 0.2)",
+				borderColor: "rgba(153, 51, 0, 0.85)",
+				pointColor: "rgba(153, 51, 0, 0.85)",
+				pointStrokeColor: "#fff",
+				pointHighlightFill: "#fff",
+				pointHighlightStroke: "rgba(151,187,205,1)",
+				data: NO
+			}
+			]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero: true
+					}
+				}]
+			}
+		}
+	});
+
 	// Bar chart
-	var ctx = document.getElementById("mybarChart");
-	var mybarChart = new Chart(ctx, {
+	var bar_ctx = document.getElementById("mybarChart");
+	var mybarChart = new Chart(bar_ctx, {
 		type: 'bar',
 		data: {
 			labels: Year,
 			datasets: [
 			{
 				label: '臭氧',
-				backgroundColor: "#ff00ff",
+				backgroundColor: "#455C73",
 				data: O3
 			},
 			{
 				label: '二氧化氮',
-				backgroundColor: "#00cc00",
+				backgroundColor: "#9B59B6",
 				data: NO2
 			},
 			{
 				label: '落塵量',
-				backgroundColor: "#455C73",
+				backgroundColor: "#ff00ff",
 				data: Dust
 			},
 			
