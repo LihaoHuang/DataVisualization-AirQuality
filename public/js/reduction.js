@@ -2,7 +2,7 @@
 * @Author: LihaoHuang
 * @Date:   2017-01-07 23:36:39
 * @Last Modified by:   LihaoHuang
-* @Last Modified time: 2017-01-08 17:33:51
+* @Last Modified time: 2017-01-08 18:02:03
 */
 
 'use strict';
@@ -18,9 +18,9 @@ window.onload=function() {
 	//取得DOM節點內的值
 	var Data = xmlData.getElementsByTagName("Data");
 	//x.push(50);
-	console.log(Data);
-	console.log(Data[0].childNodes[1]);
-	console.log(Data[0].childNodes[17].innerHTML);
+	// console.log(Data);
+	// console.log(Data[0].childNodes[1]);
+	// console.log(Data[0].childNodes[17].innerHTML);
 	var Year = new Array();
 	var Dust = new Array();	//落塵量
 	var PM25 = new Array();
@@ -38,7 +38,7 @@ window.onload=function() {
 		NO2.push(Data[i].childNodes[17].innerHTML);
 		O3.push(Data[i].childNodes[19].innerHTML);
 	}
-	console.log(NO2);
+	// console.log(NO2);
 
 	// Bar chart
 	var ctx = document.getElementById("mybarChart");
