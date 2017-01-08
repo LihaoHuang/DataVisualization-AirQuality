@@ -65,27 +65,27 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height" style="background-image:url({{ asset('/images/img101.jpg') }})">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}"><font color="black">Home</font></a>
                     @else
-                        <a href="{{ url('/login') }}">登入</a>
-                        <a href="{{ url('/register') }}">註冊</a>
+                        <a href="{{ url('/login') }}"><font color="black">登入</font></a>
+                        <a href="{{ url('/register') }}"><font color="black">註冊</font></a>
                     @endif
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    {{ config('app.name','Laravel') }}
+                    <font color="black">{{ config('app.name','Laravel') }}</font>
                 </div>
 
                 <div class="links">
-                    <a href="{{ url('/home') }}">Home</a>
-                    <a href="https://github.com/LihaoHuang/DataVisualization-AirQuality">GitHub</a>
-                    <a href="{{ url('/developer') }}">Developer</a>
+                    <a href="{{ url('/home') }}"><font color="black">Home</font></a>
+                    <a href="https://github.com/LihaoHuang/DataVisualization-AirQuality"><font color="black">GitHub</font></a>
+                    <a href="{{ url('/developer') }}"><font color="black">Developer</font></a>
                 </div>
             </div>
         </div>
